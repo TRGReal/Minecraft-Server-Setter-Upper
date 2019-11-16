@@ -1,12 +1,10 @@
 #!/bin/bash
 
 echo "Welcome to server setup!"
-echo "By continuing, you agree to the EULA."
+echo "Installing BungeeCord plugins. Please wait..."
 
 java -Xmx1024M -Xms1024M -jar server.jar nogui
 
-echo "eula=true" > eula.txt
-
-echo "Calling run script."
-echo "Next time you want to run your server, simply run start-server.sh"
+echo "Starting server!"
+echo "When you want to start the server use ./start-server.sh"
 ./start-server.sh
